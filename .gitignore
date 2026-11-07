@@ -1,0 +1,62 @@
+# ==========================================
+# 1. Virtual Environments
+# ==========================================
+# Ignore the venv created by setup_environment.py
+.venv/
+venv/
+env/
+
+# ==========================================
+# 2. Python Cache & Compiled Files
+# ==========================================
+__pycache__/
+*.py[cod]
+*$py.class
+.pytest_cache/
+build/
+dist/
+
+# ==========================================
+# 3. IDE & OS Specific Files
+# ==========================================
+# VS Code settings (keeps the repo clean if team members have different themes)
+.vscode/
+# Mac/Windows system files
+.DS_Store
+Thumbs.db
+
+# ==========================================
+# 4. 🔐 SECRETS & CREDENTIALS (CRITICAL)
+# ==========================================
+# NEVER push passwords, tokens, or API keys to GitHub
+config.py
+.env
+credentials.txt
+*.pem
+*.key
+
+# ==========================================
+# 5. 🛰️ DATA FOLDERS & SATELLITE FILES
+# ==========================================
+# Ignore the folders where our download scripts save data
+sentinel1_data/
+sentinel2_data/
+landsat_data/
+earthdata_files/
+data/
+
+# Ignore common satellite/raster file extensions (just in case they end up in the root)
+*.zip
+*.tar
+*.tar.gz
+*.SAFE/
+*.tif
+*.tiff
+*.jp2
+*.h5
+*.nc
+
+# ==========================================
+# 6. Jupyter Notebooks
+# ==========================================
+.ipynb_checkpoints/
